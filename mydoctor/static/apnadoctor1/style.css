@@ -1,0 +1,65 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+
+}
+
+body {
+     /* The image used */
+    background: white url("images/background.png");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+ul.errorlist {
+    padding-left: 0;
+}
+
+ul.errorlist > li {
+    list-style: none;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+}
+
+.glyphicon-star {
+    color: #CCCCCC;
+    font-size: 16px;
+}
+
+.glyphicon-star.active {
+    color: #FDB230;
+}
+
+.submit-btn {
+    line-height: 1.4em !important;
+    box-sizing: border-box;
+    transition: opacity ease-in-out 100ms,color ease-in-out 100ms,background-color ease-in-out 100ms,border-color ease-in-out 100ms;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: 500;
+    outline: 0;
+    padding: 3px 7px 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background: #3e78ad;
+    color: #fff;
+    border: 1px solid #234462;
+    box-shadow: 0 1px 1px 0 rgba(200,200,200,0.6);
+    font-size: 15px;
+}
+
+.submit-btn:hover {
+    border: 1px solid #2b6dad;
+}
