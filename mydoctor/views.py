@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout
 from .forms import UserForm
 from django.shortcuts import render, get_object_or_404, redirect
+from .imp1 import call
 
 
 def home(request):
@@ -71,6 +72,6 @@ def index(request):
 def test_result(request):
     if request.method == "POST":
         content=request.POST['content']
-        return render(request,'apnadoctor1/result.html',{'content':content})
+        return render(request,'apnadoctor1/result.html',{'content':call(content)})
     else:
         return redirect("apnadoctor1:login_user")

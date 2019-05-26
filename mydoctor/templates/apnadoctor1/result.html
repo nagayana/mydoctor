@@ -1,4 +1,31 @@
+{% extends 'apnadoctor1/base.html' %}
 {% block content %}
-{{ content }}
+
+<div class="col-sm-10" >
+    DISEASES
+ </div>
+ <div class="col-sm-10" >
+     <textarea rows="7" cols="160" id="id_content1" maxlength="5000000000" name="content" type="text" style="background-color:00FF00;">
+     {{ content.0}}</textarea>
+ </div>
+
+
+<div class="col-sm-10" >
+    DRUGS
+ </div>
+<div class="col-sm-10" >
+     <textarea rows="7" cols="160" id="id_content2" maxlength="5000000000" name="content" type="text" style="background-color:00FF00;">
+     {{ content.2}}</textarea>
+ </div>
+
+
+<div class="col-sm-7" >
+    SYMPTOMS
+ </div>
+<div class="col-sm-10" >
+     <textarea rows="7" cols="160" id="id_content3" maxlength="5000000000" name="content" type="text" style="background-color:00FF00;">
+     {{ content.1}}</textarea>
+ </div>
+
 {% endblock %}
         
